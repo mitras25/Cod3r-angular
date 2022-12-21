@@ -28,7 +28,7 @@ export class ProductUpdateComponent implements OnInit {
   }
 
   updateProduct(): void {
-    this.productService.udate(this.product).subscribe(() => {
+    this.productService.update(this.product).subscribe(() => {
       this.productService.showMenssage("Produto Atualizado com sucesso");
       this.router.navigate(["/products"]);
     });
